@@ -1,0 +1,16 @@
+flowchart TD
+    A[Client Application] -->|Submits document| B[API Layer]
+    B --> C[Document Processing Service]
+    C --> D[AI Inference Component]
+    D --> C
+    C --> B
+    B --> A[Client Application]
+
+    C --> E[Storage Layer]
+    D --> E[Storage Layer]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#ffb,stroke:#333,stroke-width:2px
+    style E fill:#fbf,stroke:#333,stroke-width:2px
