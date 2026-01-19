@@ -1,9 +1,9 @@
 # Use Case Specification
 
 **Project:** AI-Powered Document Intelligence Service  
-**Document Version:** 1.0  
+**Document Version:** 1.1  
 **Date:** 2026-01-19  
-**Author:** [Your Name]  
+**Author:** Anil  
 
 ---
 
@@ -67,6 +67,9 @@
 - **EF-2:** AI processing fails → document flagged as `Processing Failed`, admin notified, user informed.  
 - **EF-3:** Low-confidence extraction → highlighted for user review, optional manual verification.
 
+### Sequence Diagram
+![UC-001 Sequence Diagram](images/sequence_uc001.png)
+
 ---
 
 ## Use Case UC-002: Document Search and Retrieval
@@ -97,6 +100,9 @@
 - **EF-1:** Search index unavailable → notify user, retry automatically.  
 - **EF-2:** Semantic matching fails → fallback to keyword search, log error for retraining.
 
+### Sequence Diagram
+![UC-002 Sequence Diagram](images/sequence_uc002.png)
+
 ---
 
 ## Use Case UC-003: Document Classification & Tagging
@@ -120,8 +126,11 @@
 - **AF-2:** New document type → flagged for admin review, offline model retraining triggered.
 
 ### Error Flows
-- Misclassification → user feedback recorded for model improvement.  
-- AI engine unavailable → document queued for later classification.
+- **EF-1:** Misclassification → user feedback recorded for model improvement.  
+- **EF-2:** AI engine unavailable → document queued for later classification.
+
+### Sequence Diagram
+![UC-003 Sequence Diagram](images/sequence_uc003.png)
 
 ---
 
