@@ -68,7 +68,7 @@
 - **EF-3:** Low-confidence extraction → highlighted for user review, optional manual verification.
 
 ### Sequence Diagram
-![UC-001 Sequence Diagram](images/sequence_uc001.png)
+![UC-001 Sequence Diagram](../images/sequence_uc001.png)
 
 ---
 
@@ -101,7 +101,7 @@
 - **EF-2:** Semantic matching fails → fallback to keyword search, log error for retraining.
 
 ### Sequence Diagram
-![UC-002 Sequence Diagram](images/sequence_uc002.png)
+![UC-002 Sequence Diagram](../images/sequence_uc002.png)
 
 ---
 
@@ -130,7 +130,7 @@
 - **EF-2:** AI engine unavailable → document queued for later classification.
 
 ### Sequence Diagram
-![UC-003 Sequence Diagram](images/sequence_uc003.png)
+![UC-003 Sequence Diagram](../images/sequence_uc003.png)
 
 ---
 
@@ -157,4 +157,4 @@
 
 ## Use Case Diagram
 
-![Use Case Diagram](images/use_case_diagram.png)
+![Use Case Diagram](../images/use_case_diagram.png)
